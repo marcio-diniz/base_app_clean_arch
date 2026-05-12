@@ -1,10 +1,10 @@
 import 'package:base_app_clean_arch/domain/entity/refresh_token_response_entity.dart';
 import 'package:dartz/dartz.dart';
 
-import '../../../core/error/failures.dart';
-import '../../../domain/entity/sign_in_response_entity.dart';
-import '../../../domain/entity/sign_up_response_entity.dart';
-import '../../../domain/enums/send_code_type_enum.dart';
+import '../../core/error/failures.dart';
+import '../entity/sign_in_response_entity.dart';
+import '../entity/sign_up_response_entity.dart';
+import '../enums/send_code_type_enum.dart';
 
 abstract class IAuthRepository {
   Future<Either<Failure, SignUpResponseEntity>> signUp({

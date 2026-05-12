@@ -11,7 +11,7 @@ import '../../data/datasource/handle_status_code_error/i_handle_status_code_erro
 import '../../data/datasource/interfaces/i_support_datasource.dart';
 import '../../data/datasource/support_datasource.dart';
 import '../../data/repository/handle_error/i_handle_error_on_request.dart';
-import '../../data/repository/interfaces/i_support_repository.dart';
+import '../../domain/repository/i_support_repository.dart';
 import '../../data/repository/support_repository.dart';
 
 class SupportModule implements IDependenceModule {

@@ -3,8 +3,8 @@ import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';
 import '../../../core/services/analytics/i_analytics_service.dart';
-import '../../../data/repository/interfaces/i_account_repository.dart';
-import '../../../data/repository/interfaces/i_auth_repository.dart';
+import '../../repository/i_account_repository.dart';
+import '../../repository/i_auth_repository.dart';
 import 'i_sign_in_use_case.dart';
 
 class SignInUseCase implements ISignInUseCase {

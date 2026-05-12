@@ -9,9 +9,9 @@ import '../../data/datasource/handle_status_code_error/i_handle_status_code_erro
 import '../../data/datasource/interfaces/i_app_settings_datasource.dart';
 import '../../data/repository/app_settings_repository.dart';
 import '../../data/repository/handle_error/i_handle_error_on_request.dart';
-import '../../data/repository/interfaces/i_account_repository.dart';
-import '../../data/repository/interfaces/i_app_settings_repository.dart';
-import '../../data/repository/interfaces/i_auth_repository.dart';
+import '../../domain/repository/i_account_repository.dart';
+import '../../domain/repository/i_app_settings_repository.dart';
+import '../../domain/repository/i_auth_repository.dart';
 import '../../domain/usecase/account/accept_privacy_policy_use_case.dart';
 import '../../domain/usecase/account/accept_terms_and_conditions_use_case.dart';
 import '../../domain/usecase/account/get_my_account_use_case.dart';

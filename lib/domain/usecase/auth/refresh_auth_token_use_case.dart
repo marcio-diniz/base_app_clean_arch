@@ -2,7 +2,7 @@ import 'package:base_app_clean_arch/core/auth/i_auth_manager.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';
-import '../../../data/repository/interfaces/i_auth_repository.dart';
+import '../../repository/i_auth_repository.dart';
 import 'i_refresh_auth_token_use_case.dart';
 
 class RefreshAuthTokenUseCase implements IRefreshAuthTokenUseCase {

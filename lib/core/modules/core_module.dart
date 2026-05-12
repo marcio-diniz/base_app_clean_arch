@@ -29,7 +29,7 @@ import '../../data/datasource/interfaces/i_account_cache_datasource.dart';
 import '../../data/datasource/interfaces/i_account_datasource.dart';
 import '../../data/repository/account_repository.dart';
 import '../../data/repository/handle_error/handle_error_on_request.dart';
-import '../../data/repository/interfaces/i_account_repository.dart';
+import '../../domain/repository/i_account_repository.dart';
 import '../auth/auth_manager.dart';
 import '../environment/i_environment_manager.dart';
 import '../services/analytics/firebase_analytics_client.dart';

@@ -5,7 +5,7 @@ import 'package:dartz/dartz.dart';
 
 import '../../core/error/failures.dart';
 import '../../domain/entity/app_settings_entity.dart';
-import 'interfaces/i_app_settings_repository.dart';
+import '../../domain/repository/i_app_settings_repository.dart';
 
 class AppSettingsRepository implements IAppSettingsRepository {
   const AppSettingsRepository({

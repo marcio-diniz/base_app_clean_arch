@@ -3,8 +3,8 @@ import 'package:base_app_clean_arch/core/services/analytics/i_analytics_service.
 import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';
-import '../../../data/repository/interfaces/i_account_repository.dart';
-import '../../../data/repository/interfaces/i_auth_repository.dart';
+import '../../repository/i_account_repository.dart';
+import '../../repository/i_auth_repository.dart';
 import 'i_register_user_use_case.dart';
 
 class RegisterUserUseCase implements IRegisterUserUseCase {

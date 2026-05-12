@@ -3,7 +3,7 @@ import 'package:base_app_clean_arch/data/repository/handle_error/i_handle_error_
 import 'package:dartz/dartz.dart';
 
 import '../../core/error/failures.dart';
-import 'interfaces/i_support_repository.dart';
+import '../../domain/repository/i_support_repository.dart';
 
 class SupportRepository implements ISupportRepository {
   const SupportRepository({

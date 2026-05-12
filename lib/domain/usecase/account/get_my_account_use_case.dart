@@ -2,7 +2,7 @@ import 'package:base_app_clean_arch/domain/usecase/account/i_get_my_account_use_
 import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';
-import '../../../data/repository/interfaces/i_account_repository.dart';
+import '../../repository/i_account_repository.dart';
 import '../../entity/account_entity.dart';
 import '../../enums/type_request.dart';
 

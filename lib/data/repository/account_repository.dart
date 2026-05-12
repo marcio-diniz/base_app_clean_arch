@@ -7,7 +7,7 @@ import 'package:dartz/dartz.dart';
 
 import '../../core/error/failures.dart';
 import '../../domain/enums/type_request.dart';
-import 'interfaces/i_account_repository.dart';
+import '../../domain/repository/i_account_repository.dart';
 
 class AccountRepository implements IAccountRepository {
   const AccountRepository({

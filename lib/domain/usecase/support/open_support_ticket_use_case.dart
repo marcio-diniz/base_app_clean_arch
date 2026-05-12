@@ -1,4 +1,4 @@
-import 'package:base_app_clean_arch/data/repository/interfaces/i_support_repository.dart';
+import 'package:base_app_clean_arch/domain/repository/i_support_repository.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';

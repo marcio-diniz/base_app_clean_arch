@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import '../../../core/error/failures.dart';
-import '../../../data/repository/interfaces/i_auth_repository.dart';
+import '../../repository/i_auth_repository.dart';
 import 'i_sign_out_use_case.dart';
 
 class SignOutUseCase implements ISignOutUseCase {

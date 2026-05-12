@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 
 import '../../../core/error/failures.dart';
-import '../../../data/repository/interfaces/i_account_repository.dart';
+import '../../repository/i_account_repository.dart';
 import '../push_notification/i_update_info_push_notification_use_case.dart';
 
 class UpdateInfoPushNotificationUseCase
@@ -13,9 +13,8 @@ class UpdateInfoPushNotificationUseCase
   Future<Either<Failure, void>> call({
     required String? firebaseToken,
     required bool enabledPermission,
-  }) =>
-      accountRepository.updatePushPermission(
-        firebaseToken: firebaseToken,
-        enabledPermission: enabledPermission,
-      );
+  }) => accountRepository.updatePushPermission(
+    firebaseToken: firebaseToken,
+    enabledPermission: enabledPermission,
+  );
 }

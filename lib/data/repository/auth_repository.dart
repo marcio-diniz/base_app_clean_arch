@@ -10,7 +10,7 @@ import '../../domain/entity/sign_in_response_entity.dart';
 import '../../domain/entity/sign_up_response_entity.dart';
 import '../../domain/enums/send_code_type_enum.dart';
 import 'handle_error/i_handle_error_on_request.dart';
-import 'interfaces/i_auth_repository.dart';
+import '../../domain/repository/i_auth_repository.dart';
 
 class AuthRepository implements IAuthRepository {
   const AuthRepository({
