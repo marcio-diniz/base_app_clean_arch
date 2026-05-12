@@ -8,9 +8,9 @@ class ConstEnvironment {
 
   static Map<EnvironmentEnum, Map<String, String>> apiConsts = {
     EnvironmentEnum.production: {
-      ApiSource.argus.key: 'https://api.buscarrastreamento.com.br',
+      ApiSource.argus.key: 'https://api.meuapp.com.br',
     },
-    EnvironmentEnum.staging: {ApiSource.argus.key: 'http://192.168.0.115:8000'},
+    EnvironmentEnum.staging: {ApiSource.argus.key: 'http://192.168.0.000'},
     EnvironmentEnum.testE2E: {ApiSource.argus.key: 'http://fake-api'},
   };
 }
