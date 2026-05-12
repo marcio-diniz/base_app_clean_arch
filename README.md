@@ -28,13 +28,11 @@ A arquitetura reflete padrões e práticas que venho utilizando em projetos reai
 
 ```text
 lib/
-├── core/           # Componentes compartilhados (erros, utilitários, tema, etc.)
-├── modules/
-│   └── feature/
-│       ├── data/         # Models, datasources e implementações de repositórios
-│       ├── domain/       # Entities, repositories e use cases
-│       └── presentation/ # Cubits, pages e widgets
-└── main.dart
+├── core/           # Componentes compartilhados (erros, utilitários, tema, serviços e clients)
+├── data/           # Models, mappers, datasources e implementações de repositórios
+├── domain/         # Entities, enums, contratos de repositórios e use cases
+├── presenter/      # Pages, components, gerenciadores de estado (Cubit/BLoC) e modules para injeção de dependência
+└── main.dart       # Ponto de entrada da aplicação
 ```
 
 ## Fluxo de Dependências
