@@ -1,16 +1,105 @@
-# base_app_clean_arch
+# Base App Clean Architecture
 
-A new Flutter project.
+Template base para aplicações em Flutter utilizando Clean Architecture, SOLID e foco em escalabilidade, testabilidade e reutilização.
 
-## Getting Started
+## Objetivo
 
-This project is a starting point for a Flutter application.
+Este projeto foi criado para servir como fundação para novos aplicativos Flutter, padronizando a estrutura do código e acelerando o desenvolvimento de features com uma arquitetura consistente.
 
-A few resources to get you started if this is your first Flutter project:
+A arquitetura reflete padrões e práticas que venho utilizando em projetos reais, com foco em manutenção, escalabilidade, reutilização e testabilidade, a partir de necessidades concretas de:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Manutenção de longo prazo
+- Reutilização de componentes
+- Escalabilidade do código
+- Testabilidade
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias e Conceitos
+
+- Flutter
+- Dart
+- Cubit
+- GetIt
+- GoRouter
+- Clean Architecture
+- SOLID
+- Testes unitários
+
+## Estrutura Arquitetural
+
+```text
+lib/
+├── core/           # Componentes compartilhados (erros, utilitários, tema, etc.)
+├── modules/
+│   └── feature/
+│       ├── data/         # Models, datasources e implementações de repositórios
+│       ├── domain/       # Entities, repositories e use cases
+│       └── presentation/ # Cubits, pages e widgets
+└── main.dart
+```
+
+## Fluxo de Dependências
+
+```text
+Presentation → Domain → Data
+```
+
+- **Presentation**: Interface do usuário e gerenciamento de estado.
+- **Domain**: Regras de negócio e contratos.
+- **Data**: Implementação de acesso a dados.
+
+## Benefícios da Arquitetura
+
+- Alta coesão e baixo acoplamento
+- Facilidade para manutenção
+- Reutilização entre projetos
+- Escalabilidade
+- Testabilidade
+- Padronização
+
+## Como Utilizar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/marcio-diniz/base_app_clean_arch.git
+```
+
+2. Instale as dependências:
+
+```bash
+flutter pub get
+```
+
+3. Execute o projeto:
+
+```bash
+flutter run
+```
+
+## Quando Utilizar
+
+Esta arquitetura é especialmente útil para:
+
+- Aplicações de médio e grande porte
+- Projetos com múltiplas features
+- Times com mais de um desenvolvedor
+- Produtos com evolução contínua
+
+Para aplicativos muito simples, uma estrutura mais enxuta pode ser suficiente.
+
+## Filosofia do Projeto
+
+O objetivo não é aplicar padrões por obrigação, mas utilizá-los quando agregam valor real ao projeto.
+
+A arquitetura foi construída com foco em pragmatismo, equilibrando:
+
+- Organização
+- Simplicidade
+- Reutilização
+- Produtividade
+
+## Autor
+
+Desenvolvido por Marcio Diniz.
+
+- GitHub: https://github.com/marcio-diniz
